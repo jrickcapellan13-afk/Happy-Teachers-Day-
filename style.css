@@ -1,0 +1,94 @@
+/* Center the card */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background: #1e1e2f; /* dark masculine background */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Card styling */
+.birthdayCard {
+  width: 340px;
+  height: 460px;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  background: linear-gradient(135deg, #2c3e50, #34495e); /* masculine gradient */
+  box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+/* Front and inside */
+.cardFront, .cardInside {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  box-sizing: border-box;
+  transition: transform 0.6s;
+  color: #ecf0f1;
+  text-align: center;
+}
+
+.cardInside {
+  transform: rotateY(180deg);
+  background: linear-gradient(135deg, #34495e, #2c3e50);
+}
+
+.birthdayCard.flipped .cardFront {
+  transform: rotateY(180deg);
+}
+
+.birthdayCard.flipped .cardInside {
+  transform: rotateY(0deg);
+}
+
+/* Fonts for headings */
+.happy {
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: 'Georgia', serif;
+  margin: 0;
+}
+
+.back {
+  font-size: 1.6rem;
+  font-weight: 700;
+  font-family: 'Georgia', serif;
+  margin-bottom: 15px;
+}
+
+/* Teacher photo */
+.teacher-photo {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-top: 20px;
+  border: 3px solid #ecf0f1;
+}
+
+/* Message text */
+.cardInside p {
+  margin: 10px 0;
+  font-size: 1rem;
+  line-height: 1.4;
+  font-family: 'Verdana', sans-serif;
+}
+
+.name {
+  margin-top: 20px;
+  font-weight: bold;
+  font-family: 'Georgia', serif;
+}
