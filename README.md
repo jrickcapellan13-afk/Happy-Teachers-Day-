@@ -21,7 +21,7 @@ README.md      → the documentation (info about project)
 
 ## 🚀 How to Run
 1. Download or clone this project.  
-2. Open `index.html` in your browser.  
+2. Open `https://jrickcapellan13-afk.github.io/Happy-Teachers-Day-/` in your browser.  
 3. 🎉 Enjoy the Teacher’s Day card!  
 
 ---
@@ -34,3 +34,4 @@ Thank you for your patience, wisdom, and inspiration. 🙏
 
 ## 👨‍💻 Author
 John Patrick Capellan  
+
